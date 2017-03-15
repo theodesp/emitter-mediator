@@ -24,7 +24,8 @@ The mediator uses Rx.Subject observables
 * Producer emitters are coupled only to the Mediator.
 * Consumer emitters are coupled only to the Mediator.
 * The Mediator arbitrates the events storing and handler dispatching.
-* You can pass existing EventEmitters to the Mediator.Their existing
+* You can pass existing EventEmitters to the Mediator.Their existing handlers will be migrated
+to the mediator.
 
 # testing
 
@@ -63,7 +64,7 @@ var mediator = new EmitterMediator();
 var emitterA = new ObservableEmitter(emitter1, mediator);
 var emitterB = new ObservableEmitter(emitter2, mediator);
 // emitter1 and emitter2 will have no listeners but all 
-their existing ones will be available on subsequent calls
+// their existing ones will be available on subsequent calls
 
 // Just a producer
 var producer = new ObservableEmitter(mediator);
