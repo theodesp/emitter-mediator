@@ -1,0 +1,26 @@
+{
+  "name": "o-events",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Theo Despoudis <thdespou@hotmail.com>",
+  "scripts": {
+    "test": "tape test/**/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/theodesp/emitter-mediator.git"
+  },
+  "homepage": "https://github.com/theodesp/emitter-mediator",
+  "keywords": [
+    "mediator",
+    "rxjs",
+    "EventEmitter",
+    "Observables"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-register": "^6.24.0",
+    "rxjs": "^5.2.0",
+    "tape": "^4.6.3"
+  }
+}
