@@ -2,7 +2,7 @@
   "name": "o-events",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Theo Despoudis <thdespou@hotmail.com>",
+  "author": "Theo Despoudis",
   "scripts": {
     "test": "tape test/**/*.js | tap-spec"
   },
